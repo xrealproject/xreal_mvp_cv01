@@ -44,6 +44,8 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
         cameraView.setOnClickListener(this);
     }
 
+    //CVM01_V01 - to start the recorder...
+    // CVM02_V01 encoding
     private void initRecorder() {
         recorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
         recorder.setVideoSource(MediaRecorder.VideoSource.DEFAULT);
@@ -69,7 +71,9 @@ public class MainActivity extends Activity implements OnClickListener, SurfaceHo
             finish();
         }
     }
-
+    
+    // Start capturing the video.. 
+    // If clicked again stop capturing and send the video to another phone
     public void onClick(View v) {
         if (recording) {
             recorder.stop();
