@@ -68,7 +68,6 @@ public class FileTransfer implements Runnable {
 		Log.i(TAG, "Disconnecting");
 	}
 	
-	@Override
 	public void run(){
 		Connect();
 		SendFile(filePath);
